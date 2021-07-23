@@ -1,4 +1,5 @@
 import { List, ListItem, ListItemText, Typography } from "@material-ui/core";
+
 import '../index.css';
 
 const NameList = ({ names }) => (
@@ -8,7 +9,7 @@ const NameList = ({ names }) => (
         Victims
       </Typography>
       {names.map(name => (
-        <ListItem>
+        <ListItem key={name}>
           <ListItemText className='center' primary={name} />
         </ListItem>
       ))}
