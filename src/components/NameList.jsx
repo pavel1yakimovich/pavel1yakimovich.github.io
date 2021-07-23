@@ -1,18 +1,18 @@
-import { Button, List, ListItem, ListItemText, Typography } from "@material-ui/core";
+import { Button, List, ListItem, ListItemText } from "@material-ui/core";
 
 import '../index.css';
 
 const NameList = ({ names, mercy }) => (
   <>
     <List component="nav">
-      <Typography className='center' variant="h6">
-        Victims
-      </Typography>
+      <img className="logo" src={window.location.origin + '/logo.jpg'} />
       {names.map((name, index) => (
-        <ListItem key={name}>
-          <ListItemText className='center' primary={name} />
-          <Button color="secondary" variant="contained" onClick={() => mercy(index)} >X</Button>
-        </ListItem>
+        <div className="center">
+          <ListItem key={name} className="victim">
+            <ListItemText className="center" primary={name} />
+            <Button color="secondary" variant="contained" onClick={() => mercy(index)} >X</Button>
+          </ListItem>
+        </div>
       ))}
     </List>
   </>
