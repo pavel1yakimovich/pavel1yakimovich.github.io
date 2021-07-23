@@ -11,7 +11,7 @@ const RussianRoulette = ({ victims }) => {
     <>
       {hasVictim ? (
         <div className="center section">
-        <Button variant="contained" disabled={victims.length === 0} onClick={() => setLoserIndex()} >
+        <Button variant="contained" onClick={() => setLoserIndex()} >
           Mercy them
         </Button>
       </div>
