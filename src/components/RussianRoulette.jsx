@@ -11,7 +11,7 @@ const RussianRoulette = ({ victims }) => {
       <div className="center section">
         <Button color="secondary" variant="contained" disabled={victims.length === 0} onClick={play} >
           Play russian roulette
-        </Button>  
+        </Button>
       </div>
       {loserIndex !== undefined && (<h3 className="center">{victims[loserIndex]}</h3>)}
     </>

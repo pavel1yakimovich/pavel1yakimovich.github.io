@@ -9,12 +9,17 @@ import RussianRoulette from './components/RussianRoulette';
 function App() {
   const [victims, setVictims] = useState(['Pasha', 'Vlad', 'Misha']);
   const addVictim = name => setVictims(prev => [...prev, name]);
+  const mercy = index => setVictims((prev) => {
+    const arr = [...prev];
+    arr.splice(index, 1);
+    return arr;
+  }); 
 
   return (
     <Container>
-      <NameList names={victims} />
+      <NameList names={victims} mercy={mercy} />
       <NewNameForm addVictim={addVictim} />
-      <RussianRoulette victims={victims}/>
+      <RussianRoulette victims={victims} />
     </Container>
   );
 }
