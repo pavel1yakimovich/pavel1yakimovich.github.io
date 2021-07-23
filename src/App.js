@@ -1,10 +1,12 @@
+import { Container } from "@material-ui/core";
+
 import NameList from "./components/NameList";
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <NameList names={['Pasha', 'Vlad', 'Misha']} />
-    </div>
+    </Container>
   );
 }
 

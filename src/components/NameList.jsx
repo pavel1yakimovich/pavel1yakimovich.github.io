@@ -1,21 +1,19 @@
 import { List, ListItem, ListItemText, Typography } from "@material-ui/core";
+import '../index.css';
 
-const NameList = ({ names }) => {
-  debugger;
-  return (
+const NameList = ({ names }) => (
   <>
-    <Typography variant="h6">
-      Victims
-    </Typography>
     <List component="nav">
+      <Typography className='center' variant="h6">
+        Victims
+      </Typography>
       {names.map(name => (
         <ListItem>
-          <ListItemText primary={name} />
+          <ListItemText className='center' primary={name} />
         </ListItem>
       ))}
     </List>
   </>
 );
-      }
 
 export default NameList;
