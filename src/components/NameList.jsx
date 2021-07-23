@@ -5,7 +5,7 @@ import '../index.css';
 const NameList = ({ names, mercy }) => (
   <>
     <List component="nav">
-      <img className="logo" src={window.location.origin + '/logo.jpg'} />
+      <img alt="" className="logo" src={window.location.origin + '/logo.jpg'} />
       {names.map((name, index) => (
         <div className="center">
           <ListItem key={name} className="victim">

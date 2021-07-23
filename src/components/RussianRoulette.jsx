@@ -25,7 +25,7 @@ const RussianRoulette = ({ victims }) => {
       {hasVictim && (
         <>
           <h3 className="center">{victims[loserIndex]}</h3>
-          <img className="logo" src={window.location.origin + '/loser.jpg'} />
+          <img alt="" className="logo" src={window.location.origin + '/loser.jpg'} />
         </>
       )}
     </>
