@@ -7,7 +7,7 @@ import NewNameForm from "./components/NewNameForm";
 import RussianRoulette from './components/RussianRoulette';
 
 function App() {
-  const [victims, setVictims] = useState(['Pasha', 'Vlad', 'Misha']);
+  const [victims, setVictims] = useState([]);
   const addVictim = name => setVictims(prev => [...prev, name]);
   const mercy = index => setVictims((prev) => {
     const arr = [...prev];
